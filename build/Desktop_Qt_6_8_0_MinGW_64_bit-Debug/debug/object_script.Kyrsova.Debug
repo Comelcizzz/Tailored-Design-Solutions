@@ -1,0 +1,16 @@
+debug/auth.o
+debug/customerwindow.o
+debug/databasemanager.o
+debug/inspectorwindow.o
+debug/main.o
+debug/mainwindow.o
+debug/signinwindow.o
+debug/signupwindow.o
+debug/workerwindow.o
+debug/moc_auth.o
+debug/moc_customerwindow.o
+debug/moc_inspectorwindow.o
+debug/moc_mainwindow.o
+debug/moc_signinwindow.o
+debug/moc_signupwindow.o
+debug/moc_workerwindow.o

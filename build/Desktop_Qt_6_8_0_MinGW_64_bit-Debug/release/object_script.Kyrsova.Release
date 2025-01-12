@@ -1,0 +1,16 @@
+release/auth.o
+release/customerwindow.o
+release/databasemanager.o
+release/inspectorwindow.o
+release/main.o
+release/mainwindow.o
+release/signinwindow.o
+release/signupwindow.o
+release/workerwindow.o
+release/moc_auth.o
+release/moc_customerwindow.o
+release/moc_inspectorwindow.o
+release/moc_mainwindow.o
+release/moc_signinwindow.o
+release/moc_signupwindow.o
+release/moc_workerwindow.o

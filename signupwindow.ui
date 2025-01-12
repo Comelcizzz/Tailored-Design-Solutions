@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignUpWindow</class>
+ <widget class="QDialog" name="SignUpWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>578</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sign Up</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QDialog {
+        background-color: #2E2E2E;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    QLineEdit {
+        background-color: #444444;
+        color: white;
+        border: 1px solid #666;
+        border-radius: 5px;
+        padding: 8px;
+    }
+    QPushButton {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+    }
+    QPushButton:hover {
+        background-color: #45a049;
+    }
+    QPushButton:pressed {
+        background-color: #388E3C;
+    }
+    QRadioButton {
+        color: white;
+    }
+   </string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QPushButton" name="registerButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>320</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Підтвердити</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>301</width>
+     <height>232</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="1">
+     <widget class="QRadioButton" name="radioButtonWorker">
+      <property name="text">
+       <string>Працівник</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QRadioButton" name="radioButtonCustomer">
+      <property name="text">
+       <string>Замовник</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="firstNameInput">
+      <property name="text">
+       <string>Ім'я</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLineEdit" name="confirmPasswordInput">
+      <property name="text">
+       <string>Підтвердження паролю</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QRadioButton" name="radioButtonInspector">
+      <property name="text">
+       <string>Дизайнер</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="lastNameInput">
+      <property name="text">
+       <string>Фамілія</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="passwordInput">
+      <property name="text">
+       <string>Пароль</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="emailInput">
+      <property name="text">
+       <string>Електрона адресса</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

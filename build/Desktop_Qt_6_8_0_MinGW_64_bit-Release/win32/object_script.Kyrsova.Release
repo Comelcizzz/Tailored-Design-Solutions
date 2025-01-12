@@ -1,0 +1,17 @@
+win32/auth.o
+win32/customerwindow.o
+win32/databasemanager.o
+win32/inspectorwindow.o
+win32/main.o
+win32/mainwindow.o
+win32/orderdetails.o
+win32/signinwindow.o
+win32/signupwindow.o
+win32/workerwindow.o
+win32/moc_auth.o
+win32/moc_customerwindow.o
+win32/moc_inspectorwindow.o
+win32/moc_mainwindow.o
+win32/moc_signinwindow.o
+win32/moc_signupwindow.o
+win32/moc_workerwindow.o

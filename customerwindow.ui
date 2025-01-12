@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomerWindow</class>
+ <widget class="QDialog" name="CustomerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Customer Window</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+        background-color: #2E2E2E;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    QLineEdit, QDateTimeEdit {
+        border: 1px solid #555;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #333;
+        color: white;
+    }
+    QPushButton {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    QPushButton:hover {
+        background-color: #45a049;
+    }
+    QTabWidget {
+        background-color: #3C3F41;
+        color: white;
+    }
+    QTabBar::tab {
+        background-color: #3C3F41;
+        border: 1px solid #555;
+        padding: 5px;
+    }
+    QTabBar::tab:selected {
+        background-color: #4CAF50;
+        border: 1px solid #4CAF50;
+    }
+    QListWidget {
+        background-color: #333;
+        color: white;
+        border: 1px solid #555;
+    }
+    QListWidget::item:selected {
+        background-color: #4CAF50;
+        color: white;
+    }
+   </string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>860</width>
+     <height>540</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="TabCreateOrder">
+    <attribute name="title">
+     <string>Create Order</string>
+    </attribute>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>741</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+      </item>
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLineEdit" name="leUserGreeting">
+          <property name="text">
+           <string>Як до вас звертатись?</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lePhone">
+          <property name="text">
+           <string>Номер телефону</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="leAddress">
+          <property name="text">
+           <string>Адресса об'єкту</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QPushButton" name="btnCreate">
+        <property name="text">
+         <string>Створити замовлення</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="TabOrderHistory">
+    <attribute name="title">
+     <string>Order History</string>
+    </attribute>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>541</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btnLoadOrders">
+        <property name="text">
+         <string>Завантажити список</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QListWidget" name="orderListWidget"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
